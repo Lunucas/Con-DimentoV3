@@ -27,7 +27,11 @@ class EventServiceProvider extends ServiceProvider
      *
      * @return void
      */
-   
+    public function boot()
+    {
+        Recipe::observe(RecipeObserver::class);
+    }
+
 
     /**
      * Determine if events and listeners should be automatically discovered.
