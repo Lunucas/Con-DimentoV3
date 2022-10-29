@@ -29,7 +29,7 @@ class EventServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Recipe::observe(PostObserver::class);
+        Post::observe(PostObserver::class);
     }
 
 
